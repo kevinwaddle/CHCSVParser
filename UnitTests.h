@@ -27,7 +27,6 @@
 
 
 @interface UnitTests : SenTestCase {
-	NSAutoreleasePool * testPool;
 }
 
 @end

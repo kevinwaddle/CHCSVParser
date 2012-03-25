@@ -30,11 +30,9 @@
 @implementation UnitTests
 
 - (void) setUp {
-	testPool = [[NSAutoreleasePool alloc] init];
 }
 
 - (void) tearDown {
-	[testPool drain], testPool = nil;
 }
 
 - (NSArray *) expectedFields {
