@@ -22,6 +22,12 @@
 		8DD76F9A0486AA7600D96B5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* CHCSVParser.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* CHCSVParser.1 */; };
+		D5347826151FEA1F007F3C2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D53477A1151FE99D007F3C2C /* Foundation.framework */; };
+		D534782C151FEA1F007F3C2C /* CHCSVParserTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = D534782B151FEA1F007F3C2C /* CHCSVParserTouch.m */; };
+		D5347830151FEA77007F3C2C /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 551981D51203715400FBE033 /* CHCSVParser.m */; };
+		D5347831151FEA83007F3C2C /* CHCSVWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EFC7B81210608C0070B303 /* CHCSVWriter.m */; };
+		D5347832151FEA87007F3C2C /* NSArray+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 557FD0421204A45D009FCDBA /* NSArray+CHCSVAdditions.m */; };
+		D5347833151FEA8D007F3C2C /* NSString+CHCSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5516BCB412578CFC0025F235 /* NSString+CHCSVAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +65,14 @@
 		55EFC7B81210608C0070B303 /* CHCSVWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVWriter.m; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* CHCSVParser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CHCSVParser; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859EA3029092ED04C91782 /* CHCSVParser.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CHCSVParser.1; sourceTree = "<group>"; };
+		D53477A1151FE99D007F3C2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D53477A5151FE99D007F3C2C /* CHCSVParserTouchLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHCSVParserTouchLib-Prefix.pch"; sourceTree = "<group>"; };
+		D53477A6151FE99D007F3C2C /* CHCSVParserTouchLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParserTouchLib.h; sourceTree = "<group>"; };
+		D53477A7151FE99D007F3C2C /* CHCSVParserTouchLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCSVParserTouchLib.m; sourceTree = "<group>"; };
+		D5347825151FEA1F007F3C2C /* libCHCSVParserTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCHCSVParserTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5347829151FEA1F007F3C2C /* CHCSVParserTouch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CHCSVParserTouch-Prefix.pch"; sourceTree = "<group>"; };
+		D534782A151FEA1F007F3C2C /* CHCSVParserTouch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHCSVParserTouch.h; sourceTree = "<group>"; };
+		D534782B151FEA1F007F3C2C /* CHCSVParserTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHCSVParserTouch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5347822151FEA1F007F3C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5347826151FEA1F007F3C2C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +109,9 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859EA2029092E104C91782 /* Documentation */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
+				D53477A3151FE99D007F3C2C /* CHCSVParserTouchLib */,
+				D5347827151FEA1F007F3C2C /* CHCSVParserTouch */,
+				D53477A0151FE99D007F3C2C /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				557FCEB51203F938009FCDBA /* CoreServices.framework */,
 				557FD0541204A70D009FCDBA /* Unit Tests-Info.plist */,
@@ -121,6 +146,7 @@
 			children = (
 				8DD76FA10486AA7600D96B5E /* CHCSVParser */,
 				557FD0531204A70D009FCDBA /* Unit Tests.octest */,
+				D5347825151FEA1F007F3C2C /* libCHCSVParserTouch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,7 +175,61 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
+		D53477A0151FE99D007F3C2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D53477A1151FE99D007F3C2C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D53477A3151FE99D007F3C2C /* CHCSVParserTouchLib */ = {
+			isa = PBXGroup;
+			children = (
+				D53477A6151FE99D007F3C2C /* CHCSVParserTouchLib.h */,
+				D53477A7151FE99D007F3C2C /* CHCSVParserTouchLib.m */,
+				D53477A4151FE99D007F3C2C /* Supporting Files */,
+			);
+			path = CHCSVParserTouchLib;
+			sourceTree = "<group>";
+		};
+		D53477A4151FE99D007F3C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D53477A5151FE99D007F3C2C /* CHCSVParserTouchLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5347827151FEA1F007F3C2C /* CHCSVParserTouch */ = {
+			isa = PBXGroup;
+			children = (
+				D534782A151FEA1F007F3C2C /* CHCSVParserTouch.h */,
+				D534782B151FEA1F007F3C2C /* CHCSVParserTouch.m */,
+				D5347828151FEA1F007F3C2C /* Supporting Files */,
+			);
+			path = CHCSVParserTouch;
+			sourceTree = "<group>";
+		};
+		D5347828151FEA1F007F3C2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5347829151FEA1F007F3C2C /* CHCSVParserTouch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D5347823151FEA1F007F3C2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		557FD0521204A70D009FCDBA /* Unit Tests */ = {
@@ -188,6 +268,23 @@
 			productReference = 8DD76FA10486AA7600D96B5E /* CHCSVParser */;
 			productType = "com.apple.product-type.tool";
 		};
+		D5347824151FEA1F007F3C2C /* CHCSVParserTouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D534782D151FEA1F007F3C2C /* Build configuration list for PBXNativeTarget "CHCSVParserTouch" */;
+			buildPhases = (
+				D5347821151FEA1F007F3C2C /* Sources */,
+				D5347822151FEA1F007F3C2C /* Frameworks */,
+				D5347823151FEA1F007F3C2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CHCSVParserTouch;
+			productName = CHCSVParserTouch;
+			productReference = D5347825151FEA1F007F3C2C /* libCHCSVParserTouch.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +309,7 @@
 			targets = (
 				8DD76F960486AA7600D96B5E /* CHCSVParser */,
 				557FD0521204A70D009FCDBA /* Unit Tests */,
+				D5347824151FEA1F007F3C2C /* CHCSVParserTouch */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +364,18 @@
 				557FD0431204A45D009FCDBA /* NSArray+CHCSVAdditions.m in Sources */,
 				5516BCBB12578EA90025F235 /* NSString+CHCSVAdditions.m in Sources */,
 				55BB40E612A367A500A1BB33 /* CHCSVWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5347821151FEA1F007F3C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D534782C151FEA1F007F3C2C /* CHCSVParserTouch.m in Sources */,
+				D5347830151FEA77007F3C2C /* CHCSVParser.m in Sources */,
+				D5347831151FEA83007F3C2C /* CHCSVWriter.m in Sources */,
+				D5347832151FEA87007F3C2C /* NSArray+CHCSVAdditions.m in Sources */,
+				D5347833151FEA8D007F3C2C /* NSString+CHCSVAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +498,53 @@
 			};
 			name = Release;
 		};
+		D534782E151FEA1F007F3C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/CHCSVParserTouch.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHCSVParserTouch/CHCSVParserTouch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D534782F151FEA1F007F3C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/CHCSVParserTouch.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CHCSVParserTouch/CHCSVParserTouch-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +574,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D534782D151FEA1F007F3C2C /* Build configuration list for PBXNativeTarget "CHCSVParserTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D534782E151FEA1F007F3C2C /* Debug */,
+				D534782F151FEA1F007F3C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
